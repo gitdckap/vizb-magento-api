@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <!-- abandoned cart api Group -->
+    <route url="/V1/active/cart" method="GET">
+        <service class="DCKAP\CustomizedAPI\Api\AbandonedCartInterface" method="getActiveCart"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+    </route>
+
+    <!-- order api Group -->
+    <route url="/V1/orderlist" method="GET">
+        <service class="DCKAP\CustomizedAPI\Api\OrderListInterface" method="getOrderList"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+
+    </route>
+
+    <!-- recent order api Group -->
+    <route url="/V1/recent/orderlist/id/:id" method="GET">
+        <service class="DCKAP\CustomizedAPI\Api\OrderListInterface" method="getRecentOrderList"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+
+    </route>
+
+    <!-- customer repository api Group -->
+    <route url="/V1/customerlist" method="GET">
+        <service class="DCKAP\CustomizedAPI\Api\CustomerInterface" method="getCustomers"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+    </route>
+
+    <!-- Recent customer repository api Group -->
+    <route url="/V1/recent/customers/id/:id" method="GET">
+        <service class="DCKAP\CustomizedAPI\Api\CustomerInterface" method="getRecentCustomers"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+    </route>
+
+</routes>

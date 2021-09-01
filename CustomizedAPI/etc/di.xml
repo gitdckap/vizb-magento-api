@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="DCKAP\CustomizedAPI\Api\AbandonedCartInterface" type="DCKAP\CustomizedAPI\Model\Api\AbandonedCart" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\ResponseInterface" type="DCKAP\CustomizedAPI\Model\Response" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\QuoteResponseInterface" type="DCKAP\CustomizedAPI\Model\QuoteResponse" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\QuoteDetailInterface" type="DCKAP\CustomizedAPI\Model\QuoteDetail" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\QuoteItemInterface" type="DCKAP\CustomizedAPI\Model\QuoteItem" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\QuoteCustomerInterface" type="DCKAP\CustomizedAPI\Model\QuoteCustomer" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\QuoteAddressInterface" type="DCKAP\CustomizedAPI\Model\QuoteAddress" />
+
+    <preference for="DCKAP\CustomizedAPI\Api\OrderListInterface" type="DCKAP\CustomizedAPI\Model\Api\OrderList" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\Order\ResponseInterface" type="DCKAP\CustomizedAPI\Model\Order\Response" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\Order\OrderResponseInterface" type="DCKAP\CustomizedAPI\Model\Order\OrderResponse" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\Order\OrderDetailInterface" type="DCKAP\CustomizedAPI\Model\Order\OrderDetail" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\Order\OrderItemInterface" type="DCKAP\CustomizedAPI\Model\Order\OrderItem" />
+    <preference for="DCKAP\CustomizedAPI\Api\Data\Order\OrderAddressInterface" type="DCKAP\CustomizedAPI\Model\Order\OrderAddress" />
+<!--     <preference for="DCKAP\CustomizedAPI\Api\Data\Order\ProductOptionsInterface" type="DCKAP\CustomizedAPI\Model\Order\ProductOptions" />
+ -->
+    <preference for="DCKAP\CustomizedAPI\Api\CustomerInterface" type="DCKAP\CustomizedAPI\Model\Customer" />
+
+</config>
